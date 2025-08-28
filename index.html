@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise e Projeto de Software</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .document {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 1.5em;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #16a085;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <h1>Análise e Projeto de Software</h1>
+
+        <p>Análise e projeto de software são duas fases cruciais no desenvolvimento de sistemas. Elas garantem que o software atenda aos requisitos do usuário de forma eficiente e seja fácil de manter.</p>
+
+        <hr>
+
+        <h2>Análise de Requisitos</h2>
+
+        <p>A análise de requisitos é a primeira etapa. Nela, o objetivo é entender o problema a ser resolvido. Isso envolve:</p>
+
+        <ul>
+            <li><span class="keyword">Levantamento de Requisitos:</span> Coletar e documentar as necessidades do cliente. Pode ser feito por meio de entrevistas, questionários ou observação.</li>
+            <li><span class="keyword">Requisitos Funcionais:</span> O que o sistema deve fazer (ex: "O usuário deve poder fazer login").</li>
+            <li><span class="keyword">Requisitos Não Funcionais:</span> Como o sistema deve se comportar (ex: desempenho, segurança, usabilidade).</li>
+            <li><span class="keyword">Modelagem:</span> Criar representações visuais dos requisitos, como diagramas de caso de uso.</li>
+        </ul>
+
+        <h2>Técnicas de Projeto de Software</h2>
+
+        <p>O projeto de software transforma os requisitos em um plano detalhado para a implementação. Ele foca na arquitetura, componentes, interfaces e dados do sistema. As principais técnicas e abordagens são:</p>
+
+        <h3>1. Arquitetura de Software</h3>
+        <p>Define a estrutura geral do sistema.</p>
+        <ul>
+            <li><span class="keyword">Arquitetura em Camadas:</span> Divide o sistema em camadas, como apresentação, lógica de negócio e dados. É ideal para aplicações web e corporativas.</li>
+            <li><span class="keyword">Arquitetura Orientada a Serviços (SOA):</span> Estrutura o sistema como uma coleção de serviços. Isso permite a reutilização e a interoperabilidade.</li>
+            <li><span class="keyword">Arquitetura de Microsserviços:</span> Decompõe a aplicação em serviços pequenos, independentes e autogerenciáveis. Facilita o desenvolvimento e a implantação contínua.</li>
+        </ul>
+
+        <h3>2. Padrões de Projeto (Design Patterns)</h3>
+        <p>São soluções reutilizáveis para problemas comuns de projeto. Eles fornecem uma linguagem comum entre os desenvolvedores. Alguns exemplos são:</p>
+        <ul>
+            <li><span class="keyword">Padrões Criacionais:</span> Relacionados à criação de objetos, como o <strong>Singleton</strong> (garante uma única instância de uma classe).</li>
+            <li><span class="keyword">Padrões Estruturais:</span> Focam na composição de classes e objetos, como o <strong>Adapter</strong> (permite que classes com interfaces incompatíveis trabalhem juntas).</li>
+            <li><span class="keyword">Padrões Comportamentais:</span> Tratam da comunicação entre objetos, como o <strong>Observer</strong> (define uma dependência de um-para-muitos entre objetos, para que quando um objeto muda de estado, todos os seus dependentes sejam notificados).</li>
+        </ul>
+
+        <h3>3. Linguagem de Modelagem Unificada (UML)</h3>
+        <p>É uma linguagem padrão para visualizar, especificar, construir e documentar artefatos de um sistema de software.</p>
+        <ul>
+            <li><span class="keyword">Diagrama de Classes:</span> Mostra a estrutura do sistema, suas classes, atributos e relacionamentos.</li>
+            <li><span class="keyword">Diagrama de Sequência:</span> Representa a interação entre os objetos em uma ordem temporal.</li>
+            <li><span class="keyword">Diagrama de Atividades:</span> Modela o fluxo de trabalho ou o processo de negócios.</li>
+        </ul>
+
+        <h2>Metodologias de Projeto</h2>
+
+        <p>A forma como a análise e o projeto são executados depende da metodologia de desenvolvimento.</p>
+
+        <ul>
+            <li><span class="keyword">Cascata:</span> Um modelo linear, onde cada fase deve ser concluída antes da próxima começar. É mais rígido e menos flexível a mudanças.</li>
+            <li><span class="keyword">Ágil (Scrum, Kanban):</span> Abordagens iterativas e incrementais. O projeto é feito em ciclos curtos (sprints), com feedback contínuo. É mais adaptável a mudanças e focado na entrega de valor.</li>
+        </ul>
+
+        <div class="footer">
+            Documento gerado em: <span id="date"></span>
+        </div>
+    </div>
+
+    <script>
+        // Adiciona a data atual ao rodapé
+        document.getElementById('date').textContent = new Date().toLocaleDateString('pt-BR');
+    </script>
+</body>
+</html>
